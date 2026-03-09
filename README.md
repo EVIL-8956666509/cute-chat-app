@@ -13,6 +13,8 @@ Ek secure, private 1-to-1 chat application jo Node.js aur Socket.io pe built hai
 
 ## 🚀 Installation
 
+### 💻 PC/Laptop Pe
+
 ```bash
 # Dependencies install karo
 npm install
@@ -23,6 +25,62 @@ npm start
 # Ya development mode mein
 npm run dev
 ```
+
+### 📱 Android (Termux) Pe
+
+Termux app se phone pe bhi chala sakte ho!
+
+#### Step 1: Termux Install Karo
+1. [F-Droid](https://f-droid.org/packages/com.termux/) se Termux download karo
+2. Termux open karo
+
+#### Step 2: Dependencies Install Karo
+```bash
+# Package update karo
+pkg update && pkg upgrade -y
+
+# Node.js install karo
+pkg install nodejs -y
+
+# Git install karo
+pkg install git -y
+```
+
+#### Step 3: Project Clone Karo
+```bash
+# Home directory mein jao
+cd ~
+
+# Repository clone karo
+git clone https://github.com/EVIL-8956666509/cute-chat-app.git
+
+# Project folder mein jao
+cd cute-chat-app
+```
+
+#### Step 4: Server Start Karo
+```bash
+# Dependencies install karo
+npm install
+
+# Server start karo
+npm start
+```
+
+#### Step 5: Phone Pe Access Karo
+- Browser mein open karo: `http://localhost:3000`
+- Ya same WiFi pe dusre device se: `http://<phone-ip>:3000`
+
+#### Phone IP Check Karne Ke Liye:
+```bash
+ifconfig
+```
+Ya
+```bash
+ip addr show
+```
+
+**Note:** Phone ko same WiFi network pe hona chahiye dusre device ke saath.
 
 ## 🌐 Deploy on Render (Free)
 
