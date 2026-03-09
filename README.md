@@ -82,108 +82,76 @@ ip addr show
 
 **Note:** Phone ko same WiFi network pe hona chahiye dusre device ke saath.
 
-## 🌐 Deploy on Render (Free)
-
-### Step 1: GitHub Repository Connect Karo
-1. [Render.com](https://render.com) pe jao aur login karo
-2. "New +" button click karo → "Web Service" select karo
-3. "Build and deploy from a Git repository" choose karo
-4. Apna GitHub account connect karo
-5. `cute-chat-app` repository select karo
-
-### Step 2: Configure Karo
-| Setting | Value |
-|---------|-------|
-| **Name** | cute-chat-app |
-| **Environment** | Node |
-| **Build Command** | `npm install` |
-| **Start Command** | `npm start` |
-| **Plan** | Free |
-
-### Step 3: Deploy Karo
-1. "Create Web Service" button click karo
-2. Render automatically deploy karega
-3. **Live URL mil jayegi!** 🎉
-
-### Free Domain Milega:
-- `https://cute-chat-app.onrender.com` (example)
-- SSL certificate auto included
-- 24/7 free hosting (sleeps after 15 min idle)
-
-### Custom Domain Add Karne Ke Liye:
-1. Render Dashboard → Your Service → Settings
-2. "Custom Domains" section mein apna domain add karo
-3. DNS records configure karo (Render guide follow karo)
-
-## 📱 Usage
-
-1. **Room Create Karo**:
-   - "Create New Chat" button click karo
-   - Link copy karo aur friend ko bhejo
-
-2. **Room Join Karo**:
-   - Invite link paste karo
-   - Ya direct link se open karo
-
-3. **Chat Karo**:
-   - Apna naam enter karo
-   - Message type karo aur send karo!
-
-## 🔐 Security Features
-
-- End-to-end encrypted messages
-- Unique tokens for each session
-- Auto-delete after disconnect
-- Screenshot detection
-- Right-click disabled
-- Print screen blocked
-
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML5, CSS3, Vanilla JS
-- **Backend**: Node.js, Express
-- **Real-time**: Socket.io
-- **Security**: Crypto module
+- **Backend:** Node.js + Express
+- **Real-time:** Socket.io
+- **Frontend:** HTML5 + CSS3 + Vanilla JS
+- **Security:** Crypto for token generation
 
 ## 📁 Project Structure
 
 ```
-chat-app/
-├── server.js          # Main server file
-├── package.json       # Dependencies
-├── public/
-│   ├── index.html     # Landing page
-│   ├── chat.html      # Chat interface
-│   ├── style.css      # Cute styles
-│   ├── app.js         # Landing page JS
-│   └── chat.js        # Chat functionality
-└── README.md
+cute-chat-app/
+├── server.js              # Main server file
+├── package.json           # Dependencies
+├── README.md             # Documentation
+├── render.yaml           # Render deployment config
+├── public/               # Static files
+│   ├── index.html        # Landing page
+│   ├── chat.html         # Chat interface
+│   ├── style.css         # Styles
+│   ├── app.js            # Landing page logic
+│   ├── chat.js           # Chat functionality
+│   └── animations.js     # Animation system
+└── android-app/          # Android WebView template
+    ├── MainActivity.java
+    ├── AndroidManifest.xml
+    └── build.gradle
 ```
 
-## 🎨 Customization
+## 🔧 Environment Variables
 
-### Colors Change Karne Ke Liye:
-`public/style.css` mein `:root` section mein colors edit karo:
+`.env` file create karo (optional):
 
-```css
-:root {
-    --primary-color: #ff6b9d;    /* Main pink color */
-    --primary-dark: #e91e63;     /* Darker pink */
-    --bg-gradient-start: #ffeaa7; /* Background start */
-    --bg-gradient-end: #fab1a0;   /* Background end */
-}
+```env
+PORT=3000
+NODE_ENV=production
 ```
 
-### Port Change Karne Ke Liye:
-`server.js` mein:
-```javascript
-const PORT = process.env.PORT || 3000;  // Change 3000 to your port
-```
+## 📱 APK Build Karna
+
+Android app banane ke liye:
+
+### Option 1: Android Studio
+1. `android-app/` folder Android Studio mein open karo
+2. `MainActivity.java` mein apna server URL daalo
+3. Build → Generate Signed APK
+
+### Option 2: Sketchware (Mobile)
+1. Sketchware app install karo
+2. WebView component add karo
+3. Apna URL set karo
+4. Export APK
+
+## 🤝 Contributing
+
+Contributions welcome hain! 
+
+1. Fork karo
+2. Branch banao (`git checkout -b feature/xyz`)
+3. Changes karo
+4. Push karo (`git push origin feature/xyz`)
+5. Pull Request banao
 
 ## 📝 License
 
-MIT License
+MIT License - Free to use and modify!
 
-## 💝 Made with Love
+## 💝 Credits
 
-Cute Chat App - Secure messaging for you and your special someone! 💕
+Made with 💕 by EVIL-8956666509
+
+---
+
+**Happy Chatting!** 💬✨
