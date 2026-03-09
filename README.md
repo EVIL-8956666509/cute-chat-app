@@ -24,6 +24,39 @@ npm start
 npm run dev
 ```
 
+## 🌐 Deploy on Render (Free)
+
+### Step 1: GitHub Repository Connect Karo
+1. [Render.com](https://render.com) pe jao aur login karo
+2. "New +" button click karo → "Web Service" select karo
+3. "Build and deploy from a Git repository" choose karo
+4. Apna GitHub account connect karo
+5. `cute-chat-app` repository select karo
+
+### Step 2: Configure Karo
+| Setting | Value |
+|---------|-------|
+| **Name** | cute-chat-app |
+| **Environment** | Node |
+| **Build Command** | `npm install` |
+| **Start Command** | `npm start` |
+| **Plan** | Free |
+
+### Step 3: Deploy Karo
+1. "Create Web Service" button click karo
+2. Render automatically deploy karega
+3. **Live URL mil jayegi!** 🎉
+
+### Free Domain Milega:
+- `https://cute-chat-app.onrender.com` (example)
+- SSL certificate auto included
+- 24/7 free hosting (sleeps after 15 min idle)
+
+### Custom Domain Add Karne Ke Liye:
+1. Render Dashboard → Your Service → Settings
+2. "Custom Domains" section mein apna domain add karo
+3. DNS records configure karo (Render guide follow karo)
+
 ## 📱 Usage
 
 1. **Room Create Karo**:
