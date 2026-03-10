@@ -414,14 +414,6 @@ body {
     display: none !important;
 }
 
-.chat-interface {
-    display: flex !important;
-    flex-direction: column;
-    height: 100%;
-    background: transparent;
-    border-radius: 0;
-}
-
 /* Chat Header */
 .chat-header {
     display: flex;
