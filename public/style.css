@@ -7,45 +7,45 @@
     height: 100%;
     pointer-events: none;
     z-index: 1;
-    background: #E8F4F8;
+    background: #F5F5F5;
 }
 
 [data-theme="dark"] .star-canvas {
-    background: #1A2530;
+    background: #1E1E1E;
 }
 
-/* Cute Chat App Styles - Hydrangea Color Palette */
+/* Cute Chat App Styles - Microsoft by the Numbers Color Palette */
 :root {
-    --primary-color: #8B9DC3;
-    --primary-dark: #6B7BA3;
-    --secondary-color: #A8A4CE;
-    --bg-gradient-start: #E8F4F8;
-    --bg-gradient-end: #D4E5F0;
-    --chat-bg: #F5F9FC;
-    --message-sent: #8B9DC3;
-    --message-received: #ffffff;
-    --text-primary: #3D4A5C;
-    --text-secondary: #6B7B8C;
-    --shadow: 0 10px 40px rgba(139, 157, 195, 0.3);
+    --primary-color: #0078D4;
+    --primary-dark: #106EBE;
+    --secondary-color: #50E6FF;
+    --bg-gradient-start: #F5F5F5;
+    --bg-gradient-end: #E8E8E8;
+    --chat-bg: #FFFFFF;
+    --message-sent: #0078D4;
+    --message-received: #F3F2F1;
+    --text-primary: #323130;
+    --text-secondary: #605E5C;
+    --shadow: 0 10px 40px rgba(0, 120, 212, 0.2);
     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --card-bg: #ffffff;
-    --input-bg: #ffffff;
-    --border-color: #D4E0EC;
+    --card-bg: #FFFFFF;
+    --input-bg: #FFFFFF;
+    --border-color: #E1DFDD;
 }
 
-/* Dark Theme Variables - Hydrangea Dark */
+/* Dark Theme Variables - Microsoft Dark */
 [data-theme="dark"] {
-    --bg-gradient-start: #2D3A4A;
-    --bg-gradient-end: #1E2A3A;
-    --chat-bg: #1A2530;
-    --message-received: #2D3A4A;
-    --text-primary: #E8F0F8;
-    --text-secondary: #A8B8C8;
+    --bg-gradient-start: #1E1E1E;
+    --bg-gradient-end: #252525;
+    --chat-bg: #1E1E1E;
+    --message-received: #2D2D2D;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A0;
     --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.25);
-    --card-bg: #253040;
-    --input-bg: #2D3A4A;
-    --border-color: #3D4A5C;
+    --card-bg: #252525;
+    --input-bg: #2D2D2D;
+    --border-color: #3D3D3D;
 }
 
 * {
