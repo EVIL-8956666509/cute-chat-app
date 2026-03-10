@@ -283,7 +283,7 @@ body {
 }
 
 .modal.hidden {
-    display: none;
+    display: none !important;
 }
 
 .modal-content {
@@ -390,6 +390,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 10;
 }
 
 /* Chat Body - Normal selection allowed */
@@ -409,7 +411,15 @@ body {
 }
 
 .chat-interface.hidden {
-    display: none;
+    display: none !important;
+}
+
+.chat-interface {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+    background: transparent;
+    border-radius: 0;
 }
 
 /* Chat Header */
