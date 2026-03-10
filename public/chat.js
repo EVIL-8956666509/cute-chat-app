@@ -38,7 +38,7 @@ class Star {
         this.speedY = Math.random() * 0.5 - 0.25;
         this.brightness = Math.random();
         this.twinkleSpeed = Math.random() * 0.02 + 0.01;
-        this.color = ['#ffffff', '#ffe4e1', '#ffd700', '#ff69b4'][Math.floor(Math.random() * 4)];
+        this.color = ['#ffffff', '#50E6FF', '#0078D4', '#106EBE'][Math.floor(Math.random() * 4)];
     }
 
     update() {

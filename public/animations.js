@@ -89,7 +89,7 @@ class AnimationSystem {
                 speedY: Math.random() * 0.5 - 0.25,
                 brightness: Math.random(),
                 twinkleSpeed: Math.random() * 0.02 + 0.01,
-                color: ['#ffffff', '#E8F4F8', '#8B9DC3', '#A8A4CE'][Math.floor(Math.random() * 4)]
+                color: ['#ffffff', '#50E6FF', '#0078D4', '#106EBE'][Math.floor(Math.random() * 4)]
             });
         }
     }
@@ -182,7 +182,7 @@ class AnimationSystem {
             speedY: Math.random() * 1 + 0.5,
             speedX: Math.random() * 0.5 - 0.25,
             opacity: Math.random() * 0.5 + 0.3,
-            color: ['#8B9DC3', '#A8A4CE', '#B8C4E0', '#6B7BA3'][Math.floor(Math.random() * 4)],
+            color: ['#0078D4', '#50E6FF', '#106EBE', '#60CDFF'][Math.floor(Math.random() * 4)],
             rotation: Math.random() * Math.PI * 2,
             rotationSpeed: Math.random() * 0.02 - 0.01
         };
@@ -233,7 +233,7 @@ class AnimationSystem {
             speedY: Math.random() * 0.8 + 0.3,
             opacity: Math.random() * 0.3 + 0.1,
             isSent: isSent,
-            color: isSent ? '#8B9DC3' : '#ffffff'
+            color: isSent ? '#0078D4' : '#F3F2F1'
         };
     }
     
@@ -304,7 +304,7 @@ class AnimationSystem {
             speedY: Math.random() * 0.5 - 0.25,
             opacity: Math.random(),
             pulseSpeed: Math.random() * 0.03 + 0.01,
-            color: ['#ffffff', '#E8F4F8', '#D4E5F0', '#B8C4E0'][Math.floor(Math.random() * 4)]
+            color: ['#ffffff', '#50E6FF', '#0078D4', '#60CDFF'][Math.floor(Math.random() * 4)]
         };
     }
     
@@ -356,10 +356,10 @@ class AnimationSystem {
         this.waveOffset += 0.005;
         
         const colors = [
-            'rgba(139, 157, 195, 0.3)',
-            'rgba(168, 164, 206, 0.2)',
-            'rgba(184, 196, 224, 0.15)',
-            'rgba(107, 123, 163, 0.25)'
+            'rgba(0, 120, 212, 0.3)',
+            'rgba(80, 230, 255, 0.2)',
+            'rgba(16, 110, 190, 0.15)',
+            'rgba(96, 205, 255, 0.25)'
         ];
         
         colors.forEach((color, index) => {
